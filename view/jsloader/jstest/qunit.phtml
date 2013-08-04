@@ -1,0 +1,20 @@
+<?php
+echo $this->doctype();
+?><html>
+    <head>
+        <?php
+        echo $this->headMeta()->appendName("robots", "noindex");
+        echo $this->headLink();
+        ?>
+        <title>QUnit Testcases</title>
+        <script type="text/javascript" src="<?php echo $this->basePath('js/libs.js'); ?>"></script>
+    </head>
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+        <ol id="qunit-tests"></ol>
+        <?php
+        echo $this->codelinerjsLoader();
+        ?>
+    </body>
+</html>
