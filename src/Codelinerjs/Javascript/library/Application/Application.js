@@ -326,7 +326,8 @@ Application.Application = function() {
             var event = $CL.get('Cl.Event.Event', {
                 name : "alert",
                 params : {
-                    msg : msg
+                    msg : msg,
+                    jqX : jqX
                 }
             });
 
@@ -405,10 +406,10 @@ Application.Application = function() {
 
                     this.stopWait(false);
                 }, this))
-                .fail(function() {
+                .fail($CL.bind(function() {
                     this.alert('Lazy loading of module: ' + moduleName + ' failed.');
                     this.stopWait();
-                });
+                }, this));
             } else {
                 callback();
             }
