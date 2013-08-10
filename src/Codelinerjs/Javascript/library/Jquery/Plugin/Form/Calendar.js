@@ -1,8 +1,5 @@
 $CL.require("Cl_Core_Date");
 
-function Cl_Jquery_Plugin_Form_Calendar () {
-    
-};
 /**
  * CalendarView for jQuery
  *

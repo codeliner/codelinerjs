@@ -1,8 +1,4 @@
-function Cl_Jquery_Plugin_Form_Validate () {
-
-};
-
-///Form Values validieren
+//Form Values validieren
  (
 	 function ($) {
 		$.fn.extend({

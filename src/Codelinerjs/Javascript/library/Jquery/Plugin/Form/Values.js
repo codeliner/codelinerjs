@@ -1,6 +1,3 @@
-function Cl_Jquery_Plugin_Form_Values () {
-
-};
 /**
  * Copyright (c) 2010 Maxim Vasiliev
  *

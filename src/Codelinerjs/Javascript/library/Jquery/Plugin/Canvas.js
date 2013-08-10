@@ -1,6 +1,3 @@
-function Cl_Jquery_Plugin_Canvas () {
-
-};
 //Canvas Plugin
 (
 	 function ($) {

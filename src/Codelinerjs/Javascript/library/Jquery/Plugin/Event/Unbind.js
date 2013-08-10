@@ -1,7 +1,3 @@
-function Cl_Jquery_Plugin_Event_Unbind () {
-
-};
-
 //unbindAll
  (
 	 function ($) {

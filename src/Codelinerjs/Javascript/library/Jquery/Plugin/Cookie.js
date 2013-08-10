@@ -1,6 +1,3 @@
-function Cl_Jquery_Plugin_Cookie () {
-
-};
 /**
 * jQuery Cookie plugin
 *

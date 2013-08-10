@@ -1,7 +1,3 @@
-function Cl_Jquery_Plugin_Css_Transform () {
-
-};
-
 (function ($) {
     // Monkey patch jQuery 1.3.1+ css() method to support CSS 'transform'
     // property uniformly across Safari/Chrome/Webkit, Firefox 3.5+, IE 9+, and Opera 11+.

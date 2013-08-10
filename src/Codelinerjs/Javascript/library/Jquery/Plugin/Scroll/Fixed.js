@@ -1,6 +1,3 @@
-function Cl_Jquery_Plugin_Scroll_Fixed () {
-
-};
 /*
  * Plugin sorgt dafür, dass ein fixed positioniertes Element sanft mitscrolled
  */
