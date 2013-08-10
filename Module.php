@@ -1,55 +1,7 @@
 <?php
 /**
- * Jsloader Module
- *
- * @author Alexander Miertsch kontakt@codeliner.ws
- * @package Jsloader
- * @copyright 2012 Fenske und Miertsch GbR
+ * This file is placed here for compatibility with ZendFramework 2's ModuleManager.
+ * It allows usage of this module even without composer.
+ * The original Module.php is in 'src/DoctrineORMModule' in order to respect PSR-0
  */
-namespace Codelinerjs;
-
-use Codelinerjs\Javascript\Loader\JsLoaderAwareInterface;
-
-class Module
-{
-    public function onBootstrap($e)
-    {
-        $serviceManager = $e->getApplication()->getServiceManager();
-        $jsLoader = $serviceManager->get('codelinerjs.js_loader');
-        $controllers = $serviceManager->get('ControllerLoader');
-        $controllers->addInitializer(function ($instance) use ($jsLoader) {
-            if ($instance instanceof JsLoaderAwareInterface) {
-                $instance->setJsLoader($jsLoader);
-            }
-        });
-    }
-
-    public function getConfig()
-    {
-        return include __DIR__ . '/config/module.config.php';
-    }
-
-    public function getAutoloaderConfig()
-    {
-        return array(
-            'Zend\Loader\StandardAutoloader' => array(
-                'namespaces' => array(
-                    __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
-                ),
-            ),
-        );
-    }
-
-    public function getViewHelperConfig()
-    {
-        return array(
-            'factories' => array(
-                'codelinerjsLoader' => function ($serviceLocator) {
-                    $jsLoaderHelper = new \Codelinerjs\View\Helper\Jsloader();
-                    $jsLoaderHelper->setServiceManager($serviceLocator->getServiceLocator());
-                    return $jsLoaderHelper;
-                },
-            )
-        );
-    }
-}
+require_once __DIR__ . '/src/Codelinerjs/Module.php';

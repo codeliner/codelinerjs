@@ -18,6 +18,11 @@
         "application",
         "framework"
     ],
+    "autoload": {
+        "psr-0": {
+            "Codelinerjs\\": "src/"
+        }
+    },
     "require": {
         "php": ">=5.4.0"
     }
