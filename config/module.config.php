@@ -71,11 +71,11 @@ return array(
     ),
     "codelinerjs.js_loader" => array(
         'default' => array(
-            'public_path' => __DIR__ . '/../../../public/js',
+            'public_path' => 'public/js',
             'public_link' => '/js',
         ),
     ),
     "codelinerjs.jstest_loader" => array(
-        'test_path' => __DIR__ . '/../../../tests/Qunit',
+        'test_path' => 'tests/Qunit',
     ),
 );
