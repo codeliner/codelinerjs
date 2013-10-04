@@ -15,7 +15,7 @@ use Codelinerjs\Javascript\Exception,
     Zend\ServiceManager\ServiceLocatorInterface,
     Zend\Mvc\MvcEvent,
     Zend\View\Model\ViewModel,
-    Cl\Translator\Translator,
+    Zend\I18n\Translator\Translator,
     Zend\View\Resolver\ResolverInterface;
 
 abstract class AbstractLoader {
